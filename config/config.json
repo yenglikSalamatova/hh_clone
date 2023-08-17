@@ -14,10 +14,12 @@
     "dialect": "postgres"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "username": "doadmin",
+    "password": process.env.DATABASE_PASSWORD,
+    "host": "db-postgresql-fra1-44132-do-user-14536331-0.b.db.ondigitalocean.com",
+    "dialect": "postgres",
+    "port":25060,
+    "database" :"defaultdb",
+    "sslmode" : "require"
   }
 }
