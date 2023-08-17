@@ -1,0 +1,26 @@
+# dependencies
+/node_modules
+
+# logs
+*.log
+
+# runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# build artifacts
+build/
+dist/
+
+# environment variables
+*.env
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# macOS files
+.DS_Store
