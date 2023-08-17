@@ -1,6 +1,6 @@
-require("dotenv").config({ path: "../config.env" });
 const fs = require("fs");
 const path = require("path");
+require("dotenv").config({ path: path.resolve(__dirname, "../config.env") });
 
 module.exports = {
   development: {
