@@ -17,6 +17,8 @@ dist/
 # environment variables
 *.env
 
+config/config.json
+
 # IDE files
 .idea/
 .vscode/
