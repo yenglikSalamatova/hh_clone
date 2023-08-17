@@ -1,5 +1,7 @@
 const { Sequelize } = require("sequelize");
 const dbConfig = require("./config.json");
+const fs = require("fs");
+const path = require("path");
 
 // Получите данные для конкретной среды (development, test, production)
 const environment = process.env.NODE_ENV || "development";
@@ -16,6 +18,11 @@ const sequelize = new Sequelize(
   {
     host: config.host,
     dialect: config.dialect,
+    dialectOptions: {
+      ssl: {
+        ca: fs.readFileSync(path.resolve("config", "ca-certificate.crt")),
+      },
+    },
   }
 );
 
