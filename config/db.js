@@ -5,6 +5,8 @@ const dbConfig = require("./config.json");
 const environment = process.env.NODE_ENV || "development";
 const config = dbConfig[environment];
 
+console.log(environment);
+
 // Создайте экземпляр Sequelize с настройками подключения к вашей базе данных PostgreSQL
 const sequelize = new Sequelize(
   config.database,
