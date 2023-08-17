@@ -17,7 +17,7 @@ dist/
 # environment variables
 *.env
 
-config/config.json
+
 config/ca-certificate.crt
 
 # IDE files
