@@ -23,7 +23,7 @@ module.exports = {
     host: "db-postgresql-fra1-44132-do-user-14536331-0.b.db.ondigitalocean.com",
     dialect: "postgres",
     port: 25060,
-    database: "defaultdb",
+    database: "hh_db",
     sslmode: "require",
     dialectOptions: {
       ssl: {
